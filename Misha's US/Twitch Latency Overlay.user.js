@@ -1,13 +1,27 @@
 // ==UserScript==
-// @name         Twitch Latency Overlay
-// @namespace    http://twitch.tv/
-// @version      2024-04-03
-// @description  Display latency to broadcaster as an overlay on Twitch without embedding. - Fixed version of https://greasyfork.org/scripts/416704
-// @author       Misha
-// @match        https://www.twitch.tv/*
-// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
-// @grant        none
-// @run-at       document-end
+// @name                          Twitch Latency Overlay
+// @name:ja                       Twitch 遅延オーバーレイ
+// @name:zh-CN                    Twitch 延迟浮窗
+// @license                       CC-BY-NC-SA-4.0
+// @namespace                     https://twitch.tv/kikka1225
+// @version                       2024-04-04
+// @description                   Display latency to the broadcaster as an overlay on Twitch without embedding. - Fixed version of https://greasyfork.org/scripts/416704
+// @description:ja                配信者への遅延を埋め込みなしで Twitch 上のオーバーレイとして表示します。 - https://greeasyfork.org/scripts/416704 の修正バージョン
+// @description:zh-CN             将延迟显示为 Twitch 上的叠加层，无需嵌入。 - 修复了 https://greasyfork.org/scripts/416704 的版本
+// @author                        Misha
+// @match                         https://www.twitch.tv/*
+// @icon                          data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @grant                         none
+// @run-at                        document-end
+// @updateURL                     https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
+// @installURL                    https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
+// @downloadURL                   https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
+// @supportURL                    https://github.com/Mishasama/UserScript/issues
+// @homepageURL                   https://github.com/Mishasama/UserScript/tree/master/Misha's%20US
+// @contributionURL               https://ko-fi.com/mishasama
+// @contributionAmount            1￥
+// @compatible                    chrome
+// @compatible                    edge
 // ==/UserScript==
 
 (function() {
@@ -15,7 +29,7 @@
 
     // Your code here...
 //////////////////////////////////////////////
-// Set the position for the Overlay: [0 by default (menu bar)](you can click on the overlay button to automatically toggle to the next position)
+// Set the position for the Overlay: [0 by default (menu bar)](you can click on the overlay button to toggle to the next position automatically)
 // 0: Outside of the Video (not visible for Theatre and Full-Screen) - 1, 2, 3, 4: Inside of the Video (work for Theatre and Full-Screen)
 // 0 = Menu Bar (in the top), near the search bar.
 // 1 = Top Right.
