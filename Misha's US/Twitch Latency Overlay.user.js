@@ -7,7 +7,7 @@
 // @namespace                     https://twitch.tv/kikka1225
 // @version                       2024-04-25
 // @description                   Display latency to the broadcaster as an overlay on Twitch without embedding. - Fixed version of https://greasyfork.org/scripts/416704
-// @description:ja                配信者への遅延を埋め込みなしで Twitch 上のオーバーレイとして表示します。 - https://greeasyfork.org/scripts/416704 の修正バージョン
+// @description:ja                配信者への遅延を埋め込みなしで Twitch 上のオーバーレイとして表示します。 - https://greasyfork.org/scripts/416704 の修正バージョン
 // @description:zh-CN             将延迟显示为 Twitch 上的叠加层，无需嵌入。 - 修复了 https://greasyfork.org/scripts/416704 的版本
 // @description:zh-TW             將延遲顯示為 Twitch 上的疊加層，無需嵌入。 - 為 https://greasyfork.org/scripts/416704 的修復版本
 // @author                        Misha
