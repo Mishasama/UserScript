@@ -1,29 +1,29 @@
 // ==UserScript==
-// @name                          Twitch Latency Overlay
-// @name:ja                       Twitch 遅延オーバーレイ
-// @name:zh-CN                    Twitch 延迟浮窗
-// @name:zh-TW                    Twitch 延遲覆蓋
-// @license                       CC-BY-NC-SA-4.0
-// @namespace                     https://twitch.tv/kikka1225
-// @version                       2024-04-25
-// @description                   Display latency to the broadcaster as an overlay on Twitch without embedding. - Fixed version of https://greasyfork.org/scripts/416704
-// @description:ja                配信者への遅延を埋め込みなしで Twitch 上のオーバーレイとして表示します。 - https://greasyfork.org/scripts/416704 の修正バージョン
-// @description:zh-CN             将延迟显示为 Twitch 上的叠加层，无需嵌入。 - 修复了 https://greasyfork.org/scripts/416704 的版本
-// @description:zh-TW             將延遲顯示為 Twitch 上的疊加層，無需嵌入。 - 為 https://greasyfork.org/scripts/416704 的修復版本
-// @author                        Misha
-// @match                         https://www.twitch.tv/*
-// @icon                          data:image/png;base64,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
-// @grant                         none
-// @run-at                        document-end
-// @updateURL                     https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
-// @installURL                    https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
-// @downloadURL                   https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
-// @supportURL                    https://github.com/Mishasama/UserScript/issues
-// @homepageURL                   https://github.com/Mishasama/UserScript/tree/master/Misha's%20US
-// @contributionURL               https://ko-fi.com/mishasama
-// @contributionAmount            1￥
-// @compatible                    chrome
-// @compatible                    edge
+// @name				Twitch Latency Overlay
+// @name:ja				Twitch 遅延オーバーレイ
+// @name:zh-CN				Twitch 延迟浮窗
+// @name:zh-TW				Twitch 延遲覆蓋
+// @license				CC-BY-NC-SA-4.0
+// @namespace				https://twitch.tv/kikka1225
+// @version				2024-04-25
+// @description				Display latency to the broadcaster as an overlay on Twitch without embedding. - Fixed version of https://greasyfork.org/scripts/416704
+// @description:ja			配信者への遅延を埋め込みなしで Twitch 上のオーバーレイとして表示します。 - https://greasyfork.org/scripts/416704 の修正バージョン
+// @description:zh-CN			将延迟显示为 Twitch 上的叠加层，无需嵌入。 - 修复了 https://greasyfork.org/scripts/416704 的版本
+// @description:zh-TW			將延遲顯示為 Twitch 上的疊加層，無需嵌入。 - 為 https://greasyfork.org/scripts/416704 的修復版本
+// @author				Misha
+// @match				https://www.twitch.tv/*
+// @icon				data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%0D%3C!----%3E%0A%3Csvg%20width%3D%22800px%22%20height%3D%22800px%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%3E%0A%0D%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M13%207.5l-2%202H9l-1.75%201.75V9.5H5V2h8v5.5z%22%2F%3E%0A%0D%3Cg%20fill%3D%22%239146FF%22%3E%0A%0D%3Cpath%20d%3D%22M4.5%201L2%203.5v9h3V15l2.5-2.5h2L14%208V1H4.5zM13%207.5l-2%202H9l-1.75%201.75V9.5H5V2h8v5.5z%22%2F%3E%0A%0D%3Cpath%20d%3D%22M11.5%203.75h-1v3h1v-3zM8.75%203.75h-1v3h1v-3z%22%2F%3E%0A%0D%3C%2Fg%3E%0A%0D%3C%2Fsvg%3E
+// @grant				none
+// @run-at				document-end
+// @updateURL				https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
+// @installURL				https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
+// @downloadURL				https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
+// @supportURL				https://github.com/Mishasama/UserScript/issues
+// @homepageURL				https://github.com/Mishasama/UserScript/tree/master/Misha's%20US
+// @contributionURL			https://ko-fi.com/mishasama
+// @contributionAmount			1￥
+// @compatible				chrome
+// @compatible				edge
 // ==/UserScript==
 
 (function() {
