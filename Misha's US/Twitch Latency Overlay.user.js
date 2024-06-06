@@ -5,7 +5,7 @@
 // @name:zh-TW				Twitch 延遲覆蓋
 // @license				CC-BY-NC-SA-4.0
 // @namespace				https://twitch.tv/kikka1225
-// @version				2024-04-25
+// @version				2024-06-06
 // @description				Display latency to the broadcaster as an overlay on Twitch without embedding. - Fixed version of https://greasyfork.org/scripts/416704
 // @description:ja			配信者への遅延を埋め込みなしで Twitch 上のオーバーレイとして表示します。 - https://greasyfork.org/scripts/416704 の修正バージョン
 // @description:zh-CN			将延迟显示为 Twitch 上的叠加层，无需嵌入。 - 修复了 https://greasyfork.org/scripts/416704 的版本
@@ -14,7 +14,7 @@
 // @match				https://www.twitch.tv/*
 // @icon				data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0A%0D%3C!----%3E%0A%3Csvg%20width%3D%22800px%22%20height%3D%22800px%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20fill%3D%22none%22%3E%0A%0D%3Cpath%20fill%3D%22%23ffffff%22%20d%3D%22M13%207.5l-2%202H9l-1.75%201.75V9.5H5V2h8v5.5z%22%2F%3E%0A%0D%3Cg%20fill%3D%22%239146FF%22%3E%0A%0D%3Cpath%20d%3D%22M4.5%201L2%203.5v9h3V15l2.5-2.5h2L14%208V1H4.5zM13%207.5l-2%202H9l-1.75%201.75V9.5H5V2h8v5.5z%22%2F%3E%0A%0D%3Cpath%20d%3D%22M11.5%203.75h-1v3h1v-3zM8.75%203.75h-1v3h1v-3z%22%2F%3E%0A%0D%3C%2Fg%3E%0A%0D%3C%2Fsvg%3E
 // @grant				none
-// @run-at				document-end
+// @run-at				document-idle
 // @updateURL				https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
 // @installURL				https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
 // @downloadURL				https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Latency%20Overlay.user.js
@@ -89,11 +89,11 @@
                             tlo_position-=1;tlo_function_click();
                             setTimeout(function(){
                                 document.querySelector("button[data-a-target='player-settings-button']").click();
-                            },150);
-                        },100);
-                    },250);
-                },500);
-            },5000);
+                            },100);
+                        },50);
+                    },150);
+                },200);
+            },2000);
 //////////////////////////////////////////////
         }, tlo_create_delay);
 //////////////////////////////////////////////
