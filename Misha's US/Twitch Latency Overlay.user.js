@@ -5,7 +5,7 @@
 // @name:zh-TW				Twitch 延遲覆蓋
 // @license				CC-BY-NC-SA-4.0
 // @namespace				https://twitch.tv/kikka1225
-// @version				2024-06-06
+// @version				2024-06-07
 // @description				Display latency to the broadcaster as an overlay on Twitch without embedding. - Fixed version of https://greasyfork.org/scripts/416704
 // @description:ja			配信者への遅延を埋め込みなしで Twitch 上のオーバーレイとして表示します。 - https://greasyfork.org/scripts/416704 の修正バージョン
 // @description:zh-CN			将延迟显示为 Twitch 上的叠加层，无需嵌入。 - 修复了 https://greasyfork.org/scripts/416704 的版本
@@ -39,8 +39,10 @@
 // 3 = Bottom Left.
 // 4 = Top Left.
     var tlo_position=1;
-// Set the font color for the Overlay ["#a263ff" by default (light-purple)]
-    var tlo_font_color="#a263ff";
+// Set the font color for the Overlay ["#9463E8cc" by default (Twitch's light-purple with 80% opacity), using format #RGBA]
+    var tlo_font_color="#9463E8cc";
+// Set the button background color for the Overlay ["#18181ba8" by default (deep gray with 65% opacity), using format #RGBA]
+    var tlo_bb_color="#18181ba8";
 // Set the font size for the Overlay [13 by default]
     var tlo_font_size=13;
 // Set the delay required before creating the overlay (in milliseconds, after loading the page) [3000 by default]
@@ -52,10 +54,10 @@
     var tlo_index="width:90px;height:30px;font:bold "+tlo_font_size+"px Arial,sans-serif;line-height:30px;border-radius:4px;text-align:center;cursor:pointer;color:"+tlo_font_color;
     var tlo_list=[];
     tlo_list[0]="right:15px;top:10px;"+tlo_index;
-    tlo_list[1]="position:absolute;right:15px;top:10px;box-shadow:#111011 0px 0px 2px;background:#18181b;"+tlo_index;
-    tlo_list[2]="position:absolute;right:15px;bottom:44px;box-shadow:#111011 0px 0px 2px;background:#18181b;"+tlo_index;
-    tlo_list[3]="position:absolute;left:15px;bottom:44px;box-shadow:#111011 0px 0px 2px;background:#18181b;"+tlo_index;
-    tlo_list[4]="position:absolute;left:15px;top:10px;box-shadow:#111011 0px 0px 2px;background:#18181b;"+tlo_index;
+    tlo_list[1]="position:absolute;right:15px;top:10px;box-shadow:#111011e6 0px 0px 2px;background:"+tlo_bb_color+";"+tlo_index;
+    tlo_list[2]="position:absolute;right:15px;bottom:44px;box-shadow:#111011e6 0px 0px 2px;background:"+tlo_bb_color+";"+tlo_index;
+    tlo_list[3]="position:absolute;left:15px;bottom:44px;box-shadow:#111011e6 0px 0px 2px;background:"+tlo_bb_color+";"+tlo_index;
+    tlo_list[4]="position:absolute;left:15px;top:10px;box-shadow:#111011e6 0px 0px 2px;background:"+tlo_bb_color+";"+tlo_index;
 //////////////////////////////////////////////
     function tlo_function_click(){
         if(tlo_position == 4 || tlo_position == -1){tlo_position=0;document.querySelector("div[class='Layout-sc-1xcs6mc-0 kuGBVB']").appendChild(tlo_main);}
@@ -63,9 +65,9 @@
         tlo_main.style.cssText=tlo_list[tlo_position];
     }
 //////////////////////////////////////////////
-    function tlo_function_over(){tlo_main.style.background="#9147ff";tlo_main.style.color="#ffffff";if(tlo_position != 0){tlo_main.style.boxShadow="#7346b5 0px 0px 2px";}}
+    function tlo_function_over(){tlo_main.style.background="#451B92c0";tlo_main.style.color="#ffffffff";if(tlo_position != 0){tlo_main.style.boxShadow="#7346b5e6 0px 0px 2px";}}
 //////////////////////////////////////////////
-    function tlo_function_out(){tlo_main.style.color=tlo_font_color;if(tlo_position == 0){tlo_main.style.background="transparent";}else{tlo_main.style.background="#18181b";tlo_main.style.boxShadow="#111011 0px 0px 2px";}}
+    function tlo_function_out(){tlo_main.style.color=tlo_font_color;if(tlo_position == 0){tlo_main.style.background="transparent";}else{tlo_main.style.background=tlo_bb_color;tlo_main.style.boxShadow="#111011e6 0px 0px 2px";}}
 //////////////////////////////////////////////
     window.addEventListener('load',function(){
 //////////////////////////////////////////////
