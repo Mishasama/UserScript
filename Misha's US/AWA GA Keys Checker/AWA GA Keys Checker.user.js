@@ -5,7 +5,7 @@
 // @name:zh-TW				Alienware Arena 贈品密鑰檢查器
 // @license				CC-BY-NC-SA-4.0
 // @namespace				https://twitch.tv/kikka1225
-// @version				1.9
+// @version				1.9.1
 // @description				Generate a button in the top left corner of the page to check the remaining keys.
 // @description:ja			ページの左上にキーをチェックするボタンを生成します。
 // @description:zh-CN			在页面左上角生成一个按钮来检查剩余密钥。
@@ -674,6 +674,7 @@
 				content += `${getMessageText('withKeys')}\n${country_with_keys.toString()}\n`;
 			} else if (country_with_keys.length === 0) {
 				content += `${getMessageText('allOut')}\n`;
+				button.style.backgroundColor = '#dc3545'; // すべてのキーが配布されると、ボタンは赤色で表示されます。
 			} else {
 				content += `${getMessageText('everyCountry')}\n`;
 			}
@@ -691,7 +692,9 @@
 			}
 
 			button.textContent = content;
-			button.style.backgroundColor = '#28a745'; // 変更後の背景色
+			if (country_with_keys.length !== 0) {
+				button.style.backgroundColor = '#28a745'; // 変更後の背景色
+			}
 		} else {
 			button.textContent = originalText;
 			button.style.backgroundColor = '#007bff'; // 元の背景色
