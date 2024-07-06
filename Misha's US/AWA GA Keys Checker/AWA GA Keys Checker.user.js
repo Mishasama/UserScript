@@ -3,7 +3,7 @@
 // @name:ja				Alienware Arena ギブアウェイキー チェッカー
 // @name:zh-CN				Alienware Arena 赠品密钥检查器
 // @name:zh-TW				Alienware Arena 贈品密鑰檢查器
-// @license				CC-BY-NC-SA-4.0
+// @license				GPL-3.0
 // @namespace				https://twitch.tv/kikka1225
 // @version				1.9.1
 // @description				Generate a button in the top left corner of the page to check the remaining keys.
