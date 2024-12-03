@@ -5,13 +5,14 @@
 // @name:zh-TW				Alienware Arena 贈品密鑰檢查器
 // @license				GPL-3.0
 // @namespace				https://twitch.tv/kikka1225
-// @version				1.9.2
+// @version				1.9.3
 // @description				Generate a button in the top left corner of the page to check the available country and remaining keys.
 // @description:ja			ページの左上に、利用可能な国と残りのキーを確認するためのボタンを生成します。
 // @description:zh-CN			在页面左上角生成一个按钮，用于检查可用的国家/地区和剩余密钥。
 // @description:zh-TW			在頁面左上角產生一個按鈕，以查看可用的國家/地區和剩餘的密鑰。
 // @author				Saulios & Misha
 // @match				*://*.alienwarearena.com/ucf/show/*/Giveaway/*
+// @match				*://*.alienwarearena.com/ucf/Giveaway
 // @icon				data:image/webp;base64,UklGRmQEAABXRUJQVlA4IFgEAAAQFgCdASpaAFoAPm0ylkekIqIspHZrmZANiWQAv2xWECfK/kz+QHYQdI+Fej7tHnS+KX0ivMB5zvSAf0n/M9ZL6AHSsft56QDyNDWoZ2ZX44vpL2DP1o6ID2VSftZa4e9NF9BFIYpv7LM/gdaKHEIXpwhQxskxDiNaqk+1LrzGK+JK5ODt6WEJK6iiMBCTDygJsQtOBAsNO9+0UgbiNCKwer1RWr/7G1JQmreJlJNdg5hiI3VW8HKeAAD+ubJ7JuE2f/UGFOZFFj//EMShCERN2Z28b8ofZ34CKzIJVgbOrRmLp//nHpHjhAmBAOnVDZ/yfRD/t1ZwzDerm+r1RPkQzXNnXBMwt64Q5Mjz4GVcZF8be2A3gc7WOmZkJDRdSgMHAJ1L1VHBWKupG1uH+biA7g9nrXu2jd9JPF1FRShz46dXB13FQtcs4RRePGaU0vgJC/D/o252tWPE2S1F0GI6Ux7dr4XkSLrHoGOxei0zWMBXDfheSpB01f5xge2fTdEl/0TveavbTUnsSxXzLLIMB2Hwd7P+LDTab/XdufQKdkUJn2sLhIHddWgxpt1gDbAQ8bXm/ZlQiAsAc/OWkj2SfzhL+4zogOIcbrEr2LVGPgYsnPSupzIF3N4MNujbvGAq6/LgG6Dh+6voPM0cD/8ci/38Hw9IY0/eC8h3XfWm9xgmBYoiWuzQ2Pt1/pEJnLxEqUupdPWTlOG9wyZ4rSWhHM1l6eOcEUG7FxO7MVsTWzcfH6EdeNiy8Rk/S/DbdTa/CHJqTKlPdxNvI1XBTs7j4ArulK0CUPuLl8ospJ2Xr/TCfbzPXdF68QtYheYsLtSQTNNWgMq4dm6w4VBFM+j0BppbmsH/X8aN184PTe2c5OnqYmyoxeqS4MD5LVfss0k93wN6VIQ/s5hzCcdj+NDvZB/6MCkcyAwz6awMBNGyfz7UVxOv5IWB4i4/aj5VTxMMCX++8kcFOv0eP0X25jTTfm0beAlqkjxcVsxc5a7GuCPMWut6Wz9jqk0i9/zn5/sRBaZeXNV6I6Z7DDjKR+p4+5t/6iz9Rd3J7vztncuRkjledVSnUI5XJcGvT2U0p+Zm2NEzdFn3BQNtENIbgYnLeQu/vKqX8nuQoP8rQODSopxfiocdfFLKgy/97ykCNM7HyYdmGvThhBDR68JutTs1h3K+6qIyKtAxGQMCAwom+HmzAKr6ooYdi80m69kp85TP6tnLTnyDw+mqnIRWDwSs5axLCJLt/rr3/lcRw1mjFC2BwMya4+IJKWeNQk8P9FE8IL48RP/iwN1nF+v9De7fyf+hnje4cwq/L/zkw4vY0WlfZC36ofPLm9+qChJfiTbzrU+KbTHqYFRGQAHxLRT59CURVc0dRaw1zw+KpcVLk01/jz70wZ6a0V4v8YPOUKRDF9s5l0HD36/kyHYojf2KrN++/qgF3wdSp4WUojZOFTqOdxXThPjKAPOqPH6IcJR0WOf2+bAAAA==
 // @grant				none
 // @run-at				document-idle
