@@ -5,7 +5,7 @@
 // @name:zh-TW				Twitch 延遲覆蓋
 // @license				CC-BY-NC-SA-4.0
 // @namespace				https://twitch.tv/kikka1225
-// @version				2024-06-07
+// @version				2025-04-20
 // @description				Display latency to the broadcaster as an overlay on Twitch without embedding. - Fixed version of https://greasyfork.org/scripts/416704
 // @description:ja			配信者への遅延を埋め込みなしで Twitch 上のオーバーレイとして表示します。 - https://greasyfork.org/scripts/416704 の修正バージョン
 // @description:zh-CN			将延迟显示为 Twitch 上的叠加层，无需嵌入。 - 修复了 https://greasyfork.org/scripts/416704 的版本
@@ -82,7 +82,7 @@
                         setTimeout(function(){
                             document.querySelector("div[data-a-target='player-overlay-video-stats']").style.display="none";
 //////////////////////////////////////////////
-                            tlo_main=document.querySelector("div[data-a-target='player-overlay-video-stats'] > table > tbody > tr:nth-child(5) > td:nth-child(2) > p");
+                            tlo_main=document.querySelector("div[data-a-target='player-overlay-video-stats'] > table > tbody > tr:nth-child(8) > td:nth-child(2) > p");
 //////////////////////////////////////////////
                             tlo_main.addEventListener("click", tlo_function_click);
                             tlo_main.addEventListener("mouseover", tlo_function_over);
