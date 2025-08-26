@@ -13,8 +13,8 @@
 // @downloadURL  https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Command%20Buttons/staggerrilla.user.js
 // @require      https://update.greasyfork.org/scripts/547392/1649812/My%20own%20functions%20library.js
 // @require      https://update.greasyfork.org/scripts/547394/1649820/Library%20Twitch%20Command%20Buttons.js
-// @require      https://cdn.jsdelivr.net/npm/interactjs/dist/interact.js
-// @require      https://cdn.jsdelivr.net/npm/sweetalert2/dist/sweetalert2.all.js
+// @require      https://update.greasyfork.org/scripts/547397/1649829/interact.js
+// @require      https://update.greasyfork.org/scripts/547401/1649840/sweetalert2-latest.js
 // @require      https://openuserjs.org/src/libs/sizzle/GM_config.js
 // @grant        GM_getValue
 // @grant        GM_setValue
