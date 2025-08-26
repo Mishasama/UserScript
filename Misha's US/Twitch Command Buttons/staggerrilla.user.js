@@ -9,6 +9,7 @@
 // @match        https://www.twitch.tv/*/staggerrilla/chat*
 // @icon         https://static-cdn.jtvnw.net/jtv_user_pictures/c0df83fd-4db0-4175-8db2-3f011757031f-profile_image-70x70.png
 // @updateURL    https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Command%20Buttons/staggerrilla.user.js
+// @installURL   https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Command%20Buttons/staggerrilla.user.js
 // @downloadURL  https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Command%20Buttons/staggerrilla.user.js
 // @require      https://gist.github.com/Mishasama/1fd20ebd37b09a2b09652f9e0b47449d/raw/kuros_library.js
 // @require      https://gist.github.com/Mishasama/d5cd5d8dc4eaa9013727c96b597efd5e/raw/kuros_library_twitch_commandbuttons.js
@@ -20,6 +21,13 @@
 // @grant        GM_addStyle
 // @grant        GM_notification
 // @grant        GM_registerMenuCommand
+// @supportURL   https://github.com/Mishasama/UserScript/issues
+// @homepageURL  https://github.com/Mishasama/UserScript/tree/master/Misha's%20US
+// @contributionURL			https://ko-fi.com/mishasama
+// @contributionAmount			1￥
+// @compatible				chrome
+// @compatible				edge
+// @compatible				firefox
 // ==/UserScript==
 
 
