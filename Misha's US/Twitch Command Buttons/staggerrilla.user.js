@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Twitch staggerrilla command buttons
 // @namespace    https://github.com/Mishasama/UserScript/tree/master/Misha's%20US
-// @version      2.0.10
+// @version      2.0.11
 // @description  Adds buttons to send commands in the Twitch chat
 // @author       Kurotaku & Misha
 // @license      CC-BY-NC-SA-4.0
@@ -74,10 +74,16 @@ function generate_button_groups() {
                 ${btngrp_button("bleep", "Bleep")}
                 ${btngrp_button("bloop", "Bloop")}
                 ${btngrp_button("bleep !bloop", "Bleep & Bloop")}
+		        </div>
+		        <div style="height: 5px;"></div>
+		        <div class="k-buttongroup">
                 ${btngrp_button("join", "Join")}
                 ${btngrp_button("spawn", "Spawn")}
                 ${btngrp_button("autoup", "Autoup")}
                 ${btngrp_button("claim", "Claim")}
+	        	</div>
+        		<div style="height: 5px;"></div>
+        		<div class="k-buttongroup">
                 ${btngrp_button("enter", "Enter")}
                 ${btngrp_button("enter1", "Enter1")}
                 ${btngrp_button("bling", "Bling/h")}
