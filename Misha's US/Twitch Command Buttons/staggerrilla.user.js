@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Twitch staggerrilla command buttons
 // @namespace    https://github.com/Mishasama/UserScript/tree/master/Misha's%20US
-// @version      2.0.12
+// @version      2.0.13
 // @description  Adds buttons to send commands in the Twitch chat
 // @author       Kurotaku & Misha
 // @license      CC-BY-NC-SA-4.0
@@ -94,7 +94,6 @@ function generate_button_groups() {
 async function generate_voucher_buttons() {
     insert_voucher_buttons(
         generate_voucher_button("100k Bubbers", "+100k") +
-        generate_voucher_button("500k Bubbers", "+500k") +
-        generate_voucher_button("Daily Check in", "+1/Daily")
+        generate_voucher_button("Frrrrp", "+1/Daily")
     );
 }
