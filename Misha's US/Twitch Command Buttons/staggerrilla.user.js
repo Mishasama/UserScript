@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Twitch staggerrilla command buttons
 // @namespace    https://github.com/Mishasama/UserScript/tree/master/Misha's%20US
-// @version      2.1.1
+// @version      2.1.2
 // @description  Adds buttons to send commands in the Twitch chat
 // @author       Kurotaku & Misha
 // @license      CC-BY-NC-SA-4.0
@@ -11,10 +11,10 @@
 // @updateURL    https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Command%20Buttons/staggerrilla.user.js
 // @installURL   https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Command%20Buttons/staggerrilla.user.js
 // @downloadURL  https://github.com/Mishasama/UserScript/raw/master/Misha's%20US/Twitch%20Command%20Buttons/staggerrilla.user.js
-// @require      https://update.greasyfork.org/scripts/547392/1649812/My%20own%20functions%20library.js
-// @require      https://update.greasyfork.org/scripts/547394/1649820/Library%20Twitch%20Command%20Buttons.js
-// @require      https://update.greasyfork.org/scripts/547397/1649829/interact.js
-// @require      https://update.greasyfork.org/scripts/547401/1649840/sweetalert2-latest.js
+// @require      https://update.greasyfork.org/scripts/547392/My%20own%20functions%20library.js
+// @require      https://update.greasyfork.org/scripts/547394/Library%20Twitch%20Command%20Buttons.js
+// @require      https://update.greasyfork.org/scripts/547397/interact.js
+// @require      https://update.greasyfork.org/scripts/547401/sweetalert2-latest.js
 // @require      https://openuserjs.org/src/libs/sizzle/GM_config.js
 // @grant        GM_getValue
 // @grant        GM_setValue
