@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Twitch staggerrilla command buttons
 // @namespace    https://github.com/Mishasama/UserScript/tree/master/Misha's%20US
-// @version      2.0.13
+// @version      2.1.1
 // @description  Adds buttons to send commands in the Twitch chat
 // @author       Kurotaku & Misha
 // @license      CC-BY-NC-SA-4.0
@@ -71,21 +71,21 @@ function generate_button_groups() {
     if(GM_config.get("buttons_general"))
         buttongroups += `${btngrp_label("General")}
                 <div class="k-buttongroup">
-                ${btngrp_button("bleep", "Bleep")}
-                ${btngrp_button("bloop", "Bloop")}
-                ${btngrp_button("bleep !bloop", "Bleep & Bloop")}
+                ${btngrp_button("!bleep", "Bleep")}
+                ${btngrp_button("!bloop", "Bloop")}
+                ${btngrp_button("!bleep !bloop", "Bleep & Bloop")}
                 </div>
                 <div style="height: 5px;"></div>
                 <div class="k-buttongroup">
-                ${btngrp_button("join", "Join")}
-                ${btngrp_button("autoup", "Autoup")}
-                ${btngrp_button("claim", "Claim")}
+                ${btngrp_button("!join", "Join")}
+                ${btngrp_button("!autoup", "Autoup")}
+                ${btngrp_button("!claim", "Claim")}
                 </div>
                 <div style="height: 5px;"></div>
                 <div class="k-buttongroup">
-                ${btngrp_button("enter", "Enter")}
-                ${btngrp_button("enter1", "Enter1")}
-                ${btngrp_button("pokecatch", "Pokecatch")}
+                ${btngrp_button("gimmie", "Gimmie")}
+                ${btngrp_button("!enter1", "Enter1")}
+                ${btngrp_button("!pokecatch", "Pokecatch")}
                 </div>`;
 
     return(buttongroups);
@@ -94,6 +94,6 @@ function generate_button_groups() {
 async function generate_voucher_buttons() {
     insert_voucher_buttons(
         generate_voucher_button("100k Bubbers", "+100k") +
-        generate_voucher_button("Frrrrp", "+1/Daily")
+        generate_voucher_button("Dubbers", "+1/Daily")
     );
 }
